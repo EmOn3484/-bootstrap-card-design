@@ -1,0 +1,105 @@
+body{
+    background: cadetblue;
+    margin-top: 80px;
+}
+     
+.pricingTable{
+    background: #FF2A5E;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0 0 55px;
+    margin: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; 
+}
+.pricingTable .pricingTable-header{ padding: 20px 10px; }
+.pricingTable .title{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.pricingTable .pricing-content{
+    background-color: #fff;
+    width: 85%;
+    margin: 0 0 0 -10px;
+    box-shadow: 7px 7px 1px rgba(0,0,0,0.2);
+    border-radius: 0 20px 20px 20px;
+    position: relative;
+}
+.pricingTable .pricing-content:before{
+    content: "";
+    background: linear-gradient(to top left,#888 49%, transparent 50%);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.pricingTable .price-value{
+    color: #494949;
+    background: #efefef;
+    padding: 25px 0 20px;
+    border-radius: 0 20px 0 0;
+    border-bottom: 3px solid #d2d2d2;
+}
+.pricingTable .price-value .amount{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.pricingTable .price-value .amount-sm{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    vertical-align: top;
+}
+.pricingTable .price-value .duration{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 0 -45px;
+}
+.pricingTable .pricing-content ul{
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable .pricing-content ul li{
+    color: #adabab;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+    border-bottom: 2px solid #d2d2d2;
+}
+.pricingTable .pricing-content ul li:last-child{ margin-bottom: 0; }
+.pricingTable .pricingTable-signup{ padding: 15px 0 40px; }
+.pricingTable .pricingTable-signup a{
+    color: #fff;
+    background: #FF2A5E;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.4);
+    transition: all 0.3s;
+}
+.pricingTable .pricingTable-signup a:hover{
+    box-shadow: none;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.pricingTable.blue,
+.pricingTable.blue .pricingTable-signup a{
+    background: #00657A;
+}
+.pricingTable.orange,
+.pricingTable.orange .pricingTable-signup a{
+    background: #e0710f;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin: 0 0 40px 10px; }
+}
